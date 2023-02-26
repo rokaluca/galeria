@@ -4,7 +4,7 @@ let data = {
     description: 'Ez bizony az elso kep'
     };
 
-    $('#photo').attr('src', data.photo);
+  $('#photo').attr('src', data.photo);
    $('#photo-title').text(data.title)
    $('#photo-description').text(data.description)
 
@@ -69,11 +69,13 @@ $('#jobbnyil').click(() => {
     loadPhoto(currentPhoto);
   });
 
-['elsokep', 'masodikkep', 'harmadikkep', 'negyedikkep', 'otodikkep', 'hatodikkep'].forEach((kep, index) => {
-  $(`#${kep}`).click(() => {
-    currentPhoto=index;
+  $(document).ready(function () {
+    imagesData.forEach(function (image, index) {
+      $(".kepek").append(`<div class="minikep" data-index="${index}"><h2 class ="cim">${image.title}</h2><img src="${image.photo}" class="minikep"></div>`);
+    });
+    $(".minikep").click((event) => {
+      currentPhoto = parseInt($(event.target).parent().attr("data-index"));
+      loadPhoto(currentPhoto);
+    });
     loadPhoto(currentPhoto);
-  })
-})
-
-
+  });

@@ -20,7 +20,7 @@ section{
     width: 1000px;
     
 }
-aside{
+.oldal{
     width: 100px;
     display: flex;
     justify-content: center;
@@ -49,6 +49,7 @@ main{
     opacity: .8;
 }
 .kepek{
+    position: relative;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -59,13 +60,13 @@ main{
 .minikep{
     height: 60px;
     width: 80px;
-    
+
 }
-.kep{
-    height: 60px;
-    width: 80px;
-}
-.minikep:hover {
-    border: 5px solid #DEB887;
-    transform: scale(1.2);
+  .cim {
+    display: none;
+    font-size: 10px;
+    text-indent: 15px;
+  }
+  .minikep:hover .cim {
+    display: block;
   }
