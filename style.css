@@ -1,0 +1,71 @@
+body {
+    background-color: #FFEBCD;
+}
+section{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    height: 500px;
+    width: 1000px;
+    
+}
+.egesz{
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 1000px;
+    
+}
+aside{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DEB887;
+}
+.tukor{
+    transform: scaleX(-1);
+}
+main{
+    position: relative;
+    height: 400px;
+    width: 800px;
+    
+}
+#photo{
+    height: 400px;
+    width: 800px;
+}
+.leiras{
+    position: absolute;
+    bottom: 0;
+    height: 100px;
+    width: 800px;
+    background-color: #DEB887;
+    opacity: .8;
+}
+.kepek{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 100px;
+    width: 800px;
+    
+}
+.minikep{
+    height: 60px;
+    width: 80px;
+    
+}
+.kep{
+    height: 60px;
+    width: 80px;
+}
+.minikep:hover {
+    border: 5px solid #DEB887;
+    transform: scale(1.2);
+  }
